@@ -12,7 +12,7 @@ if(isset($_POST['submit']) and isset($_POST['title']) and isset($_POST['upl_file
 
 
 
-function upload_files(){
+function upload_files() {
 	$target_dir = "uploads/";
 	$target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
 	$uploadOk = 1;

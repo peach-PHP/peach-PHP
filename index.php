@@ -1,27 +1,19 @@
 <?php
 
 /*
-|===============================================
-|   including requires here
-|===============================================
+|--------------------------------------------------------------------------
+|	Application ignites here !!
+|--------------------------------------------------------------------------
 */
-require_once 'connect.php';
 
-$query = "SELECT * FROM files";
-$result = mysqli_query($conn, $query);
-while($row = mysqli_fetch_assoc($result)) {
+require_once __DIR__.'/vendor/autoload.php';
 
-?>
 
-<form action="http://<?php echo $row['server_loc'] ?>/dwd/master.php" method="post">
-	<p><?php echo $row['title']; ?> -- <?php echo $row['orig_name']; ?></p>
-	<input type="hidden" name="file" value="<?php echo $row['file_hash'] ?>">
-	<input type="submit" name="submit">
-</form>
-<hr>
-
-<?php
-
-}
+/*
+|--------------------------------------------------------------------------
+|	Starting the application instance
+|--------------------------------------------------------------------------
+*/
+require_once __DIR__.'/app/autoload.php';
 
 ?>
