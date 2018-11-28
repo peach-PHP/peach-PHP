@@ -1,8 +1,6 @@
 <?php
-
 use App\Route;
 
-
-Route::get('/','sgdhs@chsd');
+Route::get('/abc', 'HomeController@index');
 
 ?>
