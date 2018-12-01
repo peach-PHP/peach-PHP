@@ -23,6 +23,7 @@ class ComposerStaticInit6e068de556ddd98aa007880cbc4f5e80
     public static $classMap = array (
         'App\\Controller' => __DIR__ . '/../..' . '/app/Framework/Controller/Controller.php',
         'App\\Route' => __DIR__ . '/../..' . '/app/Framework/Routes/Route.php',
+        'App\\RouteUtils' => __DIR__ . '/../..' . '/app/Framework/Routes/RouteUtils.php',
         'App\\View' => __DIR__ . '/../..' . '/app/Framework/Views/View.php',
     );
 

@@ -7,7 +7,7 @@ class View
     {
         $path = str_replace('.', '/', $viewname);
         $path = $path . '.view.php';
-        if (file_exists(__DIR__.'/../../../src/resources/views/'.$path)){
+        if (file_exists(__DIR__.'/../../../src/resources/views/'.$path)) {
             $view_obj = new View();
             $content = $view_obj->parse_viewPage($path);
             $handle=fopen(__DIR__.'/compiler.php','w');

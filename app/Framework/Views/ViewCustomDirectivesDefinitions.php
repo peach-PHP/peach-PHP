@@ -1,4 +1,5 @@
 <?php
+
 $directives_definition = [
     '@if' => ' <?php if',
     '@close' => '{ ?> ',
@@ -7,7 +8,8 @@ $directives_definition = [
     '@endphp' => ' ?> ',
     '@endif' => ' <?php } ?> '
 ];
-$directives=[
-    '@if','@close','@else','@php','@endphp','@endif'
-];
+
+
+$directives = array_keys($directives_definition);
+
 ?>
