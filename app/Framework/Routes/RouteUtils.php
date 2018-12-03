@@ -6,6 +6,8 @@ namespace App;
 |--------------------------------------------------------------------------
 */
 
+use App\View as View;
+
 class RouteUtils
 {
     protected static $methods;
@@ -25,7 +27,8 @@ class RouteUtils
             self::executeFun();
             die();
         } else {
-            die("Route Not Found !!!");
+            View::viewPage('errors.404');
+            die();
         }
     }
 
