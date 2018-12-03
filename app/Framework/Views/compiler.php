@@ -1,5 +1,3 @@
- <?php if(1 == 2){ ?> 
-<h1>Eureka It Worked !!</h1>
- <?php }else{ ?> 
-	<h4>Something Went Horribly Wrong !!!</h4>
- <?php } ?> 
+<?php use App\View; ?><?php echo View::viewIncludes('templates.app-start'); ?>
+<?php echo View::viewIncludes('templates.app-main'); ?>
+<?php echo View::viewIncludes('templates.app-end'); ?>

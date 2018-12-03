@@ -1,12 +1,14 @@
 <?php
 
 $directives_definition = [
-    '@if' => ' <?php if',
-    '@close' => '{ ?> ',
+    '@if(' => ' <?php if(',
+    '@closeif' => '){ ?> ',
     '@else' => ' <?php }else{ ?> ',
     '@php' => ' <?php ',
     '@endphp' => ' ?> ',
-    '@endif' => ' <?php } ?> '
+    '@endif' => ' <?php } ?> ',
+    '@include' => '<?php echo View::viewIncludes',
+    ';' => '; ?>'
 ];
 
 

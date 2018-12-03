@@ -1,6 +1,6 @@
 <?php
 use App\Route;
 
-Route::get('/abc', 'HomeController@index');
+Route::get('/', 'HomeController@index');
 
 ?>

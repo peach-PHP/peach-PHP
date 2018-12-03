@@ -9,13 +9,25 @@ class View
         $path = $path . '.view.php';
         if (file_exists(__DIR__.'/../../../src/resources/views/'.$path)) {
             $view_obj = new View();
-            $content = $view_obj->parse_viewPage($path);
+            $content = '<?php use App\View; ?>'.$view_obj->parse_viewPage($path);
             $handle=fopen(__DIR__.'/compiler.php','w');
             fwrite($handle,$content);
             fclose($handle);
             include_once __DIR__.'/compiler.php';
         } else {
             die("File Not Found !!");
+        }
+    }
+
+    public static function viewIncludes($includeName){
+        $path = str_replace('.', '/', $includeName);
+        $path = $path . '.view.php';
+        if (file_exists(__DIR__.'/../../../src/resources/views/'.$path)) {
+            $view_obj = new View();
+            $content = $view_obj->parse_viewPage($path);
+            return $content;
+        } else {
+            die($includeName." File Not Found !!");
         }
     }
 
