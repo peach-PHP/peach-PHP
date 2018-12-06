@@ -2,7 +2,8 @@
 
 <div class="row">
 	<div class="col s12 m12 l12 center">
-		<img src="src/resources/assets/images/peach.jpg" style="max-width: 50%;">
+		<img class="hide-on-med-and-down" src="src/resources/assets/images/logo.png" style="max-width: 19%;">
+		<img class="show-on-med-and-down-only hide-on-large-only" src="src/resources/assets/images/logo.png" style="max-width: 48%;">
 		<h3>Peach PHP</h3>
 		<h6><b>Version:</b> 1.0.0@pre-release</h6>
 		<div class="container center">
