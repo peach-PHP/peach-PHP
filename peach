@@ -1,0 +1,10 @@
+#!/usr/bin/env php
+<?php
+
+use App\Console;
+
+require __DIR__.'/vendor/autoload.php';
+
+Console::boot($argv);
+
+?>
