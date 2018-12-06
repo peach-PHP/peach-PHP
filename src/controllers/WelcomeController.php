@@ -1,5 +1,6 @@
 <?php
 use App\Controller;
+use App\User;
 
 class HomeController extends Controller
 {

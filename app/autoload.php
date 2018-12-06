@@ -6,6 +6,15 @@
 */
 use App\Controller as Controller;
 use App\Route as Route;
+use App\Database as Database;
+
+
+/*
+|--------------------------------------------------------------------------
+|	Database initialize connection !!!
+|--------------------------------------------------------------------------
+*/
+Database::connectDB(__DIR__.'/../src/config/database.php');
 
 
 /*
