@@ -40,7 +40,11 @@ class Console
 			case 'show:info':
 				Peach::show2D();
 				break;
-				
+
+			case 'serve':
+				Peach::startServer($param);
+				break;
+
 			default:
 				die("Sorry! The given command is not supported");
 				break;
