@@ -6,7 +6,7 @@ class HomeController extends Controller
 {
     public function index()
     {
-        $this->View('welcome');
+        return view('welcome.view.php');
     }
 
     public function index2()

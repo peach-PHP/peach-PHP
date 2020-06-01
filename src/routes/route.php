@@ -2,4 +2,6 @@
 use App\Route;
 
 Route::get('/', 'HomeController@index');
-Route::get('/abc', 'HomeController@index2');
+Route::get('/foo', function () {
+    echo "Hello Peach";
+});

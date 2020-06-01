@@ -1,3 +1,3 @@
-<?php use App\View; ?><?php echo View::viewIncludes('templates.app-start'); ?>
-<?php echo View::viewIncludes('templates.app-main'); ?>
-<?php echo View::viewIncludes('templates.app-end'); ?>
+<?php use App\View; ?>{{ include('templates/app-start.view.php') }}
+{{ include('templates/app-main.view.php') }}
+{{ include('templates/app-end.view.php') }}
