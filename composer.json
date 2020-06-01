@@ -6,6 +6,7 @@
   },
   "require": {
     "illuminate/database": "^5.7",
+    "vlucas/phpdotenv": "^2.4",
     "twig/twig": "~2.0"
   }
 }

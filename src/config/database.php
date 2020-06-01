@@ -1,11 +1,11 @@
 <?php
 
 return [
-    'driver' => 'mysql',
-    'host' => '127.0.0.1',
-    'database' => 'bdc',
-    'username' => 'root',
-    'password' => '',
+    'driver' => atm('DB_TYPE'),
+    'host' => atm('DB_HOST'),
+    'database' => atm('DB_NAME'),
+    'username' => atm('DB_USER'),
+    'password' => atm('DB_PASS'),
     'charset' => 'utf8',
     'collation' => 'utf8_unicode_ci',
     'prefix' => '',

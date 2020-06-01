@@ -24,7 +24,7 @@
 				<p>Hello, Welcome to Peach PHP Framework. Peach is a php mvc framework designed to speed up your coding process with ready to use librarie. You can check out the documentation for starting your first Hello World Application.</p>
 			</div>
 			<div class="col s10 m10 l10 offset-s1 offset-m1 offset-l1">
-		  		<h6 class="right">Developer - SAURASS</h6>
+		  		<h6 class="right">Developer - Saurabh Srivastava</h6>
 			</div>
 		</div>
 	</div>
