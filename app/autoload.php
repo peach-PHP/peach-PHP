@@ -1,35 +1,37 @@
 <?php
 /*
 |--------------------------------------------------------------------------
-|	Require all files required at the instance
+|    Require all files required at the instance
 |--------------------------------------------------------------------------
-*/
+ */
 use App\Controller as Controller;
-use App\Route as Route;
 use App\Database as Database;
-
-
-/*
-|--------------------------------------------------------------------------
-|	Database initialize connection !!!
-|--------------------------------------------------------------------------
-*/
-Database::connectDB(__DIR__.'/../src/config/database.php');
-
+use App\Route as Route;
 
 /*
 |--------------------------------------------------------------------------
-|	Controllers Load Here !!!
+|    Pull Global Methods Here !!!
 |--------------------------------------------------------------------------
-*/
-Controller::loadControllers(__DIR__.'/../src/controllers');
-
+ */
+require_once __DIR__ . "/Framework/methods.php";
 
 /*
 |--------------------------------------------------------------------------
-|	Route initiation !!!
+|    Database initialize connection !!!
 |--------------------------------------------------------------------------
-*/
-Route::loadRoutes(__DIR__.'/../src/routes/route.php');
+ */
+Database::connectDB(__DIR__ . '/../src/config/database.php');
 
-?>
+/*
+|--------------------------------------------------------------------------
+|    Controllers Load Here !!!
+|--------------------------------------------------------------------------
+ */
+Controller::loadControllers(__DIR__ . '/../src/controllers');
+
+/*
+|--------------------------------------------------------------------------
+|    Route initiation !!!
+|--------------------------------------------------------------------------
+ */
+Route::loadRoutes(__DIR__ . '/../src/routes/route.php');
